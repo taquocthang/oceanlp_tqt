@@ -1,0 +1,46 @@
+# ignore everything in the root except the "wp-content" directory. (if only html project then comment first line below)
+#/*
+!wp-content/
+!html/
+
+# ignore everything in the "wp-content" directory, except:
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# ignore these plugins
+wp-content/plugins/*
+# but except:
+# !wp-content/plugins/acf-options-page/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# ignore index.php in plugins and themes folder
+wp-content/plugins/index.php
+wp-content/themes/index.php
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+.DS_Store
+Thumbs.db
+desktop.ini
+.sass-cache/
+*.css.map
+*.psd
+_notes/
+
+# ignore more files and directories
+/vendor/*
+/config/app.php
+/tmp/*
+/logs/*
+/.htaccess
+
+# ignore except root files
+!README.md
+!deploy.php
+!.gitignore
